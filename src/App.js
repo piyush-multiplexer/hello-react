@@ -1,4 +1,5 @@
 import "./App.css";
+import { ClickHandler } from "./components/ClickHandler";
 import { Greet } from "./components/Greet";
 import { Message } from "./components/Message";
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <p>This is child prop</p>
       </Greet>
       <Message />
+      <ClickHandler />
     </div>
   );
 }
