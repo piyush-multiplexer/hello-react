@@ -1,4 +1,7 @@
 import "./App.css";
+import "./appStyles.css";
+import styles from "./appStyles.module.css";
+
 import { ClickHandler } from "./components/ClickHandler";
 import { Greet } from "./components/Greet";
 import { Message } from "./components/Message";
@@ -20,6 +23,8 @@ function App() {
       <ParentComponent />
       <UserGreeting />
       <NameList />
+      <h1 className="error">Error</h1>
+      <h1 className={styles.success}>Success</h1>
     </div>
   );
 }
