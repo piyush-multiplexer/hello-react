@@ -2,6 +2,7 @@ import "./App.css";
 import { ClickHandler } from "./components/ClickHandler";
 import { Greet } from "./components/Greet";
 import { Message } from "./components/Message";
+import { NameList } from "./components/NameList";
 import { ParentComponent } from "./components/ParentComponent";
 import { UserGreeting } from "./components/UserGreeting";
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <ClickHandler />
       <ParentComponent />
       <UserGreeting />
+      <NameList />
     </div>
   );
 }
