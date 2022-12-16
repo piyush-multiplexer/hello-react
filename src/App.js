@@ -5,6 +5,7 @@ import styles from "./appStyles.module.css";
 import { ClickHandler } from "./components/ClickHandler";
 import { Form } from "./components/Form";
 import { Greet } from "./components/Greet";
+import { ListUseEffect } from "./components/ListUseEffect";
 import { Message } from "./components/Message";
 import { NameList } from "./components/NameList";
 import { ParentComponent } from "./components/ParentComponent";
@@ -14,6 +15,7 @@ import { UserGreeting } from "./components/UserGreeting";
 function App() {
   return (
     <div className="App">
+      <ListUseEffect />
       <Greet sn="Goyani" name="Piyush" />
       <Greet sn="Gabani" name="Yash">
         <button>Login</button>
