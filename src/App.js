@@ -8,6 +8,7 @@ import { Greet } from "./components/Greet";
 import { Message } from "./components/Message";
 import { NameList } from "./components/NameList";
 import { ParentComponent } from "./components/ParentComponent";
+import { PostForm } from "./components/PostForm";
 import { PostList } from "./components/PostList";
 import { UserGreeting } from "./components/UserGreeting";
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <p>This is child prop</p>
       </Greet>
       <Form />
+      <PostForm />
       <Message />
       <ClickHandler />
       <ParentComponent />
