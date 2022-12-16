@@ -8,6 +8,7 @@ import { Greet } from "./components/Greet";
 import { Message } from "./components/Message";
 import { NameList } from "./components/NameList";
 import { ParentComponent } from "./components/ParentComponent";
+import { PostList } from "./components/PostList";
 import { UserGreeting } from "./components/UserGreeting";
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
       <ParentComponent />
       <UserGreeting />
       <NameList />
-
+      <PostList />
       <h1 className="error">Error</h1>
       <h1 className={styles.success}>Success</h1>
     </div>
