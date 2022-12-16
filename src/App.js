@@ -3,6 +3,7 @@ import "./appStyles.css";
 import styles from "./appStyles.module.css";
 
 import { ClickHandler } from "./components/ClickHandler";
+import { Form } from "./components/Form";
 import { Greet } from "./components/Greet";
 import { Message } from "./components/Message";
 import { NameList } from "./components/NameList";
@@ -18,11 +19,13 @@ function App() {
       <Greet>
         <p>This is child prop</p>
       </Greet>
+      <Form />
       <Message />
       <ClickHandler />
       <ParentComponent />
       <UserGreeting />
       <NameList />
+
       <h1 className="error">Error</h1>
       <h1 className={styles.success}>Success</h1>
     </div>
