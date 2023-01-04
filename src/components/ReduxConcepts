@@ -1,0 +1,11 @@
+Concept
+=======
+Store - state of appl
+Action - describe the changes of app
+Reducer - carry out state transition based on action
+
+Principles
+==========
+Single store object tree
+Emit/Dispatch action to Update state, not direct
+State transformation by Reducer
