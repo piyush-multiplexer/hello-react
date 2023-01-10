@@ -9,7 +9,7 @@ const iceReducer = (state = initialState, action) => {
         case BUY_ICE:
             return {
                 ...state,
-                numOfIce: state.numOfIce - 1
+                numOfIce: state.numOfIce - action.payload
             }
 
         default: return state
