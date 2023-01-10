@@ -1,12 +1,12 @@
 import { connect } from "react-redux"
-import { buyCake } from "./components/redux"
+import { buyIce } from "./components/redux"
 
 // default export is below as connect()
-const CakeContainer = (props) => {
+const IceContainer = (props) => {
     return (
         <div>
-            <h2>Number of Cakes: {props.numOfCake}</h2>
-            <button onClick={props.buyCake}>Buy Cake</button>
+            <h2>Number of Ices: {props.numOfIce}</h2>
+            <button onClick={props.buyIce}>Buy Ice</button>
         </div>
     )
 }
@@ -14,16 +14,16 @@ const CakeContainer = (props) => {
 // access redux state/properties in component - mapping
 const mapStateToProps = state => {
     return {
-        numOfCake: state.cake.numOfCake
+        numOfIce: state.ice.numOfIce
     }
 }
 
 // dispatch action in component - mapping
 const mapDispatchToProps = dispatch => {
     return {
-        buyCake: () => dispatch(buyCake())
+        buyIce: () => dispatch(buyIce())
     }
 }
 
 // connect react component to redux store
-export default connect(mapStateToProps, mapDispatchToProps)(CakeContainer)
+export default connect(mapStateToProps, mapDispatchToProps)(IceContainer)
