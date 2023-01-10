@@ -6,6 +6,7 @@ import { Counter, HOCGreen, HOCRed } from "./components/HOC";
 import CakeContainer from "./CakeContainer";
 import { HooksCakeContainer } from "./components/HooksCakeContainer";
 import IceContainer from "./IceContainer";
+import ItemContainer from "./ItemContainer";
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
         <CakeContainer />
         <HooksCakeContainer />
         <IceContainer />
+        <ItemContainer cake  />
+        <ItemContainer />
         <HOCGreen cmp={Counter} />
         <HOCRed cmp={Counter} />
         <UseRef />
